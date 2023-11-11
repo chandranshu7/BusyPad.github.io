@@ -37,6 +37,12 @@
             width: 100%;
         }
     </style>
+
+<script>
+    function loadGame() {
+      fetch('/load-game');
+    }
+  </script>
 </head>
 <body>
    <!-- Navbar -->
@@ -74,7 +80,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="option1.html">
-                        <div class="card">
+                        <div class="card" onclick="loadGame()">
                             <img src="option1-image.jpg" class="card-img-top" alt="Memory Game">
                             <div class="card-body">
                                 <h5 class="card-title">Memory Game</h5>
